@@ -1,0 +1,18 @@
+<template name="ideasSubmit">
+  <div class="ideasSubmit">
+    <div class="form-style">
+      <div class="container">
+        <form class="ideaSubmitForm">
+          {{#if currentUser}}
+          <div class="pull-right">
+            {{> loginButtons}}
+          </div>
+          {{/if}}
+          <h3>Send idea. It's anonymous</h3>
+          <input autofocus="autofocus" type="text" id="idea" class="idea-form form-control" name="idea" placeholder="Type your idea here"/>
+          <input type="submit" value="Send idea" class="btn btn-primary btn-raised" />
+        </form>
+      </div>
+    </div>
+  </div>
+</template>

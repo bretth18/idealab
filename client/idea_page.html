@@ -1,0 +1,14 @@
+<template name="ideaPage">
+  <div class="form-style">
+    <div class="container">
+      {{> ideaItem}}
+      <div class="comment">
+        <h4>Comments</h4>
+        {{#each comments}}
+          {{> commentItem}}
+        {{/each}}
+      </div>
+        {{> commentSubmit}}
+    </div>
+  </div>
+</template>

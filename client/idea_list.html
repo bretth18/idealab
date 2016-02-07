@@ -1,0 +1,14 @@
+<template name="ideasList">
+  <div class="yaks">
+    <div class="form-style">
+      <div class="container">
+        <ul class="list-group">
+          <h3>Live feed of what ideas are being brewed near you</h3>
+          {{#each ideas}}
+            {{> ideaItem}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
