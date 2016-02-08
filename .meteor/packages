@@ -22,8 +22,8 @@ twbs:bootstrap
 natestrauser:font-awesome
 fezvrasta:bootstrap-material-design
 iron:router
-accounts-ui
 mquandalle:jade
-accounts-github
 accounts-password
 useraccounts:materialize
+accounts-ui
+accounts-github

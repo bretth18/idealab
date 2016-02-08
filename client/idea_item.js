@@ -56,6 +56,15 @@ Template.ideaItem.events({
  		}
  	},
 
+  //TODO: user can only delete posts that they have created
+  //TEMPORARY DELETE FUNCTION 
+  'click a.delete':function() {
+    if (Meteor.user()) {
+      console.log('user post' _id:this._id 'removed')
+      Ideas.remove({_id:this._id})
+    }
+  },
+
  	'click a.no':function() {
  		if (Meteor.user()) {
  			var postId = Ideas.findOne({_id:this._id})

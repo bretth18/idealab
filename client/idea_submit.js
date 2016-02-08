@@ -8,8 +8,9 @@ Template.ideasSubmit.events({
       alert("You can't insert an empty idea. Try to write something intelligent.");
     }
     else {
+
       Meteor.call('ideaInsert', idea);
-      Router.go('ideaList');
+      Router.go('ideasList');
     }
   }
 });
