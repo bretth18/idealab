@@ -1,0 +1,19 @@
+<template name="code">
+<br />
+<body>
+  <a class="btn btn-primary center-block" href="/codeSubmit" type="button">Send Code Idea</a>
+  <div class="ideas">
+    <div class="form-style">
+      <div class="container">
+        <ul class="list-group">
+          <h3>Live feed of Code ideas brewed near you</h3>
+        {{#each ideas}}
+          {{> codeItem}}
+        {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</template>

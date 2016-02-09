@@ -10,11 +10,17 @@
       <div class="container">
         <a class="navbar-brand" href="/"><i class="fa fa-bolt"></i>
 ideaBolt</a>
+      {{#if currentUser}}
+        <a class="navbar-brand text-muted pull-right" href="#" id="login-buttons-logo">Logout</a>
+        <a class="btn btn-primary btn-raised pull-right" href="/submit" type="button">Submit Idea</a>
+      {{else}}
         <a class="navbar-brand text-muted pull-right" href="/login">Login</a>
         <a class="btn btn-primary btn-raised pull-right" href="/submit" type="button">Submit Idea</a>
+      {{/if}}
       </div>
     </div>
   </div>
+  
   <!-- Foooter
   <div class="footer navbar navbar-defualt navbar-fixed-bottom">
     <div class="container">

@@ -1,0 +1,24 @@
+<template name="codeItem">
+  <div class="idea">
+    <li class="list-group-item">
+      <div class="ideaPost">
+        <div class="well">
+        <p class="break-el">{{idea}}</p>
+<!-- added wells -->
+      {{#if currentUser}}
+        <a class="btn" href="{{pathFor 'ideaPage'}}">{{commentsCount}} comments</a>
+        <a class="btn pull-right btn-small no" href="#"><i class="fa fa-chevron-down"></i></a>
+        <a class="btn pull-right" href="#"> {{score}} </a>
+        <a class="btn pull-right btn-small yes" href="#"><i class="fa fa-chevron-up"></i></a>
+        <a class="btn pull-right btn-small delete" href="#"><i class="fa fa-trash"></i></a>
+      {{else}}
+        <a class="btn" href="{{pathFor 'ideaPage'}}">{{commentsCount}} comments</a>
+        <a class="btn pull-right btn-small" href="{{pathFor 'accounts'}}"><i class="fa fa-chevron-down"></i></a>
+        <a class="btn pull-right" href="#"> {{score}} </a>
+        <a class="btn pull-right btn-small" href="{{pathFor 'accounts'}}"><i class="fa fa-chevron-up"></i></a>
+      {{/if}}
+      </div>
+    </div>
+    </li>
+  </div>
+</template>
