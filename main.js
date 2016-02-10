@@ -13,6 +13,9 @@ Router.route('/sign-out', {
   name:'sign-out',
   onBeforeAction: function() {
     AccountsTemplates.logout();
+    // gfk: notifications
+    // currently being appended on login??
+  //  Notifications.info('title', 'logged out');
     Router.go('/');
   }
 });
