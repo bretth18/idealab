@@ -27,3 +27,4 @@ accounts-password
 useraccounts:materialize
 accounts-ui
 accounts-github
+accounts-base
