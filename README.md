@@ -13,3 +13,11 @@
   1. ideaBolt is an open source project, contributions are welcome
   2. Please submit pull-requests to have your code reviewed for a master merge.
   3. Please report issues and feature requests to https://github.com/bretth18/idealab/issues
+
+##Planned Development
+  * independent account system, only GH tie in optional
+  * anonymous account system
+  * local based channels
+  * picture submission to ideas
+  * markdown based input for comments/ideas
+  * comments based on logged in users
