@@ -11,16 +11,45 @@
         <a class="navbar-brand" href="/"><i class="fa fa-bolt"></i>
 ideaBolt</a>
       {{#if currentUser}}
+        <!-- channel dropdown for navbar -->
+        <!-- <li class="dropdown open">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Channels
+            <span class="carat"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="/code">Code Channel</a>
+            </li>
+            <li>
+              <a href="#">Empty</a>
+            </li>
+            <li>
+              <a href="#">Your School Here</a>
+            </li>
+          </ul>
+        </li> -->
         <a class="navbar-brand text-muted pull-right" href="#" id="login-buttons-logo">Logout</a>
         <a class="btn btn-primary btn-raised pull-right" href="/submit" type="button">Submit Idea</a>
       {{else}}
+          <a href="#" class="navbar-brand dropdown-toggle pull-right" data-toggle="dropdown" role="button">Channels</a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a href="/code">Code Channel</a>
+            </li>
+            <li>
+              <a href="#">Empty</a>
+            </li>
+            <li>
+              <a href="#">Your School Here</a>
+            </li>
+          </ul>
         <a class="navbar-brand text-muted pull-right" href="/login">Login</a>
         <a class="btn btn-primary btn-raised pull-right" href="/submit" type="button">Submit Idea</a>
       {{/if}}
       </div>
     </div>
   </div>
-  
+
   <!-- Foooter
   <div class="footer navbar navbar-defualt navbar-fixed-bottom">
     <div class="container">
