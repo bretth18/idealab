@@ -4,6 +4,7 @@ Meteor.methods({
       idea : idea,
       score : 0,
       submitted : new Date(),
+      user : Meteor.userId(),
     });
   },
   commentInsert: function(comment) {
