@@ -6,9 +6,13 @@
     <div class="container">
       <div class="list-group-item">
         <div class="pagination-centered">
+          <!-- TODO: Temporary, maybe append signup button next to login -->
           <h2>Please login to vote</h2>
-          <div class="btn btn-raised">
-            {{> loginButtons}}
+          <div>
+            <a href="/signup">or Signup here</a>
+          </div>
+          <div class="container-fluid">
+            {{> login}}
           </div>
         </div>
       </div>

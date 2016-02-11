@@ -1,9 +1,16 @@
 <template name="login">
-  <form id="login-form" action="action">
-    <div class="container-fluid">
-      <input type="email" id="login-email" />
-      <input type="password" id="login-password" />
-      <input type="submit" id="login-button" value="sign in" />
+  <div class="login-container container-fluid">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h4>Login</h4>
+        <div class="form-group">
+          <input class="form-control input-sm" id="login-username" placeholder="Username" />
+          <input class="form-control input-sm" id="login-password" placeholder="Password" type="password" />
+          <div>
+            <button type="button" class="btn btn-info fullbutton btn-raised" id="login">Log in</button>
+          </div>
+        </div>
+      </div>
     </div>
-  </form>
+  </div>
 </template>

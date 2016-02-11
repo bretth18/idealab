@@ -1,0 +1,24 @@
+<template name="signup">
+  <div class="signup-container container-fluid">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        {{#if currentUser}}
+        <!-- TODO: we actually want this to return to home -->
+          <div class="container text-center">
+            <h2>You're Signed Up!</h2>
+          </div>
+        {{else}}
+        <h4>Sign Up</h4>
+        <div class="form-group">
+          <!-- TODO: do we really want usernames? -->
+          <input class="form-control input-sm" id="signup-username" placeholder="Username" />
+          <input class="form-control input-sm" id="signup-fullname" placeholder="Full name" />
+          <input class="form-control input-sm" id="signup-email" placeholder="Email" />
+          <input class="form-control input-sm" id="signup-password" placeholder="Password" type="password" />
+        </div>
+        <button type="button" class="btn btn-info btn-raised fullbutton" id="signup">Sign Up</button>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</template>

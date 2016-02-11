@@ -24,10 +24,7 @@ fezvrasta:bootstrap-material-design
 iron:router
 mquandalle:jade
 accounts-password
-useraccounts:materialize
 accounts-ui
-accounts-github
-accounts-base
 gfk:notifications
 meteorhacks:kadira
 meteorhacks:kadira-profiler
