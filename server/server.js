@@ -8,6 +8,10 @@ Meteor.methods({
     });
   },
   commentInsert: function(comment) {
-    Comments.insert(comment);
+    Comments.insert(comment, Meteor.userId());
   }
+  //server call to insert commentUser into our comment
+  // commentUserInsert: function(comment) {
+  //   Comments.insert(commentUser);
+  // }
 });
