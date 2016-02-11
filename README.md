@@ -15,7 +15,7 @@
   3. Please report issues and feature requests to https://github.com/bretth18/idealab/issues
 
 ##Planned Development
-  * independent account system, only GH tie in optional
+  * ~~~independent account system, only GH tie in optional~~~
   * anonymous account system
   * local based channels
   * picture submission to ideas
