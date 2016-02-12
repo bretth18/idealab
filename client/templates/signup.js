@@ -1,4 +1,3 @@
-
 // Template.userManagement.helpers({
 //   create: function(){
 //
@@ -17,9 +16,9 @@ Template.signup.events({
     var user = {
       username: $('#signup-username').val(),
       password: $('#signup-password').val(),
-      profile : {
-        email : $('#signup-email').val(),
-        name : $('#signup-fullname').val(),
+      profile: {
+        email: $('#signup-email').val(),
+        name: $('#signup-fullname').val(),
       }
     };
 

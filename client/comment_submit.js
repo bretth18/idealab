@@ -9,7 +9,7 @@ Template.commentSubmit.events({
       user: Meteor.userId()
     };
     //define our comment user to be appended
-    var commentUser = e.target.Meteor.userId();
+    //var commentUser = e.target.Meteor.userId();
 
     var commentBody = e.target.body.value;
     // Check if the comment is not empty
@@ -17,8 +17,7 @@ Template.commentSubmit.events({
       alert("You can’t insert empty comment. Try to comment something nice instead.")
     } else {
       //call our commentInsert function to append data
-      Meteor.call('commentInsert', comment, Meteor.userId());
-      //call our commentUserInsert to append userId to the individual comment thread.
+      Meteor.call('commentInsert', comment);
       Meteor.call('commentUserInsert', Meteor.userId());
     }
     // clear input field
